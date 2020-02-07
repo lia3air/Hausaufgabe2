@@ -19,17 +19,21 @@
     </li>
     {{/messages}}
 </ul>
-<form action="/new" method="post">
+<form action="/new" method="post" id="superForm">
     <div class="form-row">
         <label for="a">Author</label>
-        <input type="text" name="author" id="a">
+        <input type="text" name="author" id="myAuthor">
     </div>
     <div class="form-row">
         <label for="b">Text</label>
-        <textarea name="text" id="b" rows="4"></textarea>
+        <textarea name="text" id="myText" rows="4"></textarea>
     </div>
     <div class="form-controls">
-        <button type="submit">Senden</button>
+        <button id="submitButton" type="submit">Senden</button>
     </div>
 
+
 </form>
+<div id="error" style="display: none; color: red">In diesem Textfeld muss was stehen.</div>
+
+<script type="application/ecmascript" src="script.js"></script>

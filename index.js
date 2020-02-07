@@ -60,9 +60,9 @@ app.post('/delete', (request,response) => {
     for (let i=0 ; i<messages.length; i++){
 
         if (messages[i].date===request.body.date){
-            console.log(messages.length);
+
             messages.splice(i, 1);
-            console.log(messages.length);
+
         }
 
     }
